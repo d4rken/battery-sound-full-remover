@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:text="@string/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"/>
+
+    <Button
+        android:text="Test if device is rooted."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_root"
+        android:onClick="hasRoot"/>
+
+    <CheckBox
+        android:text="If checked the battery full sound is turned off. If unchecked it is turned on."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_batterysound"/>
+
+    <CheckBox
+        android:id="@+id/cb_batterylow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If checked battery low sound is turned off."/>
+
+    <CheckBox
+        android:text="If checked the usb connection sound is turned off."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_usbconnection"/>
+
+    <CheckBox
+        android:text="If checked the shutdown sound is turned off."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_shutdown"/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:text="If checked the dialer button sound is turned off."
+        android:id="@+id/cb_dialerbutton"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:text="DebugInfo"
+        android:layout_width="wrap_content"
+        android:id="@+id/bDebug"
+        android:layout_height="wrap_content"
+        android:onClick="debugInfo"/>
+</LinearLayout>
